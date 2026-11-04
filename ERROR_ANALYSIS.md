@@ -19,3 +19,12 @@ motivate broader independently authored challenge data, not a claim that the
 clinical language problem is solved. A stronger follow-up experiment would hold
 out entity names, vary dialogue ordering, add ambiguous references and multiple
 medications, then compare calibrated abstention and context-aware encoders.
+
+## Conservative decision policy
+
+The reviewed parser bounds frame confidence by the minimum confidence of its
+predicted entity tokens. The reducer also rejects non-finite scores, irrelevant
+slots and malformed dose strings. The stronger guard reduces state mutations
+under shifted phrasing; it does not improve the underlying neural parser.
+The separate familiar-template slice demonstrates fitting and state integration,
+while the primary held-out-template result remains a failed generalization test.
