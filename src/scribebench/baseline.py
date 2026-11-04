@@ -5,12 +5,12 @@ from .schema import Parse
 
 
 def parse_rule(text):
+    source = text
     text = text.lower()
     spans = []
     for key, choices in [("drug", DRUGS), ("symptom", SYMPTOMS)]:
         for value in choices:
-            match = re.search(r"\b" + re.escape(value) + r"\b", text)
-            if match:
+            for match in re.finditer(r"\b" + re.escape(value) + r"\b", source, re.IGNORECASE):
                 spans.append(
                     {"slot": key, "start": match.start(), "end": match.end(), "value": value}
                 )
@@ -18,12 +18,22 @@ def parse_rule(text):
         ("dose", r"\b\d+(?= mg\b)"),
         ("frequency", r"\b(?:twice daily|daily|nightly)\b"),
     ]:
-        match = re.search(pattern, text)
-        if match:
+        for match in re.finditer(pattern, source, re.IGNORECASE):
             spans.append(
-                {"slot": key, "start": match.start(), "end": match.end(), "value": match.group()}
+                {
+                    "slot": key,
+                    "start": match.start(),
+                    "end": match.end(),
+                    "value": match.group().lower(),
+                }
             )
     slots = {s["slot"]: s["value"] for s in spans}
+    if len(slots) != len(spans):
+        return Parse("unsupported", {}, 0.0), spans
+    if "drug" in slots:
+        remainder = text.replace("no longer", "")
+        if re.search(r"\b(no|not|never|without)\b|n't", remainder):
+            return Parse("unsupported", {}, 0.0), spans
     if "symptom" in slots:
         intent = "deny_symptom" if re.search(r"\b(no|not|deny)\b", text) else "report_symptom"
     elif re.search(r"\b(stopped|remove|longer|discontinue|quit)\b", text):
