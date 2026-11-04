@@ -70,7 +70,8 @@ TEMPLATES = {
 
 
 def tokens(text):
-    return list(re.finditer(r"[a-z0-9]+", text.lower()))
+    # Match original text so Unicode case expansion cannot shift character offsets.
+    return list(re.finditer(r"[a-zA-Z0-9]+", text))
 
 
 def render(intent, family, values):
