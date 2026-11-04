@@ -161,7 +161,7 @@
           "validation_loss": 3.1446423530578613
         }
       ],
-      "seconds": 6.214983459096402,
+      "seconds": 7.205792125314474,
       "n_dialogues": 120,
       "n_turns": 840,
       "intent_accuracy": 0.4392857142857143,
@@ -169,10 +169,10 @@
       "span_precision": 0.4328267477203647,
       "span_recall": 0.8476190476190476,
       "span_micro_f1": 0.5730382293762576,
-      "joint_state_accuracy": 0.060714285714285714,
+      "joint_state_accuracy": 0.0,
       "joint_state_dialogue_bootstrap_95": [
-        0.04223214285714286,
-        0.07976190476190474
+        0.0,
+        0.0
       ],
       "per_intent_accuracy": {
         "add_medication": 1.0,
@@ -289,7 +289,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um the problem is dizziness",
@@ -362,7 +362,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um the problem is dizziness",
@@ -425,7 +425,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um i am unsure how much i take",
@@ -670,7 +670,7 @@
           "validation_loss": 2.792443037033081
         }
       ],
-      "seconds": 5.95880312519148,
+      "seconds": 7.884789874777198,
       "n_dialogues": 120,
       "n_turns": 840,
       "intent_accuracy": 0.5869047619047619,
@@ -678,10 +678,10 @@
       "span_precision": 0.3969465648854962,
       "span_recall": 0.8047619047619048,
       "span_micro_f1": 0.5316555249705073,
-      "joint_state_accuracy": 0.047619047619047616,
+      "joint_state_accuracy": 0.0,
       "joint_state_dialogue_bootstrap_95": [
-        0.03095238095238095,
-        0.06547619047619048
+        0.0,
+        0.0
       ],
       "per_intent_accuracy": {
         "add_medication": 0.9083333333333333,
@@ -1170,7 +1170,7 @@
           "validation_loss": 3.478328227996826
         }
       ],
-      "seconds": 5.933675667271018,
+      "seconds": 7.518716708756983,
       "n_dialogues": 120,
       "n_turns": 840,
       "intent_accuracy": 0.625,
@@ -1178,10 +1178,10 @@
       "span_precision": 0.38696655132641294,
       "span_recall": 0.7988095238095239,
       "span_micro_f1": 0.5213675213675214,
-      "joint_state_accuracy": 0.041666666666666664,
+      "joint_state_accuracy": 0.0011904761904761906,
       "joint_state_dialogue_bootstrap_95": [
-        0.026190476190476188,
-        0.05657738095238092
+        0.0,
+        0.0035714285714285713
       ],
       "per_intent_accuracy": {
         "add_medication": 1.0,
@@ -1315,7 +1315,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um the problem is dizziness",
@@ -1376,7 +1376,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um the problem is dizziness",
@@ -1427,7 +1427,7 @@
             "symptom": "on",
             "drug": "list"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "i meant 40 mg instead",
@@ -1440,7 +1440,7 @@
             "dose": "40",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um i am unsure how much i take",
@@ -1509,7 +1509,7 @@
             "dose": "10",
             "drug": "instead"
           },
-          "action": "accepted"
+          "action": "clarify"
         },
         {
           "text": "um i am unsure how much i take",
