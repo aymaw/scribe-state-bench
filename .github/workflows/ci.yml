@@ -25,4 +25,5 @@ jobs:
       - run: uv run ruff check . && uv run ruff format --check .
       - run: uv run pytest -q
       - run: uv run python -m scribebench.train --n 60 --epochs 2 --out runs/ci
+      - run: uv run python -m scribebench.demo --checkpoint runs/ci/joint-7.pt
       - run: uv run python -m build
