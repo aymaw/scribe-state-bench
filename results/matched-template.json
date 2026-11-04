@@ -1,0 +1,1476 @@
+{
+  "scope": "same-template synthetic evaluation; individual utterances may repeat train",
+  "data_sha256": "2f3fd2fd6dd57deda4703972510377e6443c800759f4ec81e94abf8a344568cd",
+  "runs": [
+    {
+      "checkpoint": "joint-19.pt",
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 1.0,
+      "semantic_exact_match": 0.9607142857142857,
+      "span_precision": 0.9178082191780822,
+      "span_recall": 0.9571428571428572,
+      "span_micro_f1": 0.9370629370629371,
+      "joint_state_accuracy": 0.4380952380952381,
+      "joint_state_dialogue_bootstrap_95": [
+        0.3677976190476191,
+        0.5047619047619049
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 1.0,
+        "stop_medication": 1.0,
+        "correct_dose": 1.0,
+        "unknown_dose": 1.0,
+        "report_symptom": 1.0,
+        "deny_symptom": 1.0,
+        "confirm": 1.0
+      },
+      "errors": [
+        {
+          "text": "my medication is zelorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use zelorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is zelorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use zelorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        }
+      ]
+    },
+    {
+      "checkpoint": "joint-31.pt",
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 1.0,
+      "semantic_exact_match": 0.9607142857142857,
+      "span_precision": 0.9178082191780822,
+      "span_recall": 0.9571428571428572,
+      "span_micro_f1": 0.9370629370629371,
+      "joint_state_accuracy": 0.44047619047619047,
+      "joint_state_dialogue_bootstrap_95": [
+        0.37023809523809526,
+        0.5172916666666667
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 1.0,
+        "stop_medication": 1.0,
+        "correct_dose": 1.0,
+        "unknown_dose": 1.0,
+        "report_symptom": 1.0,
+        "deny_symptom": 1.0,
+        "confirm": 1.0
+      },
+      "errors": [
+        {
+          "text": "my medication is zelorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use zelorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is zelorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use zelorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        }
+      ]
+    },
+    {
+      "checkpoint": "joint-7.pt",
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 1.0,
+      "semantic_exact_match": 0.9380952380952381,
+      "span_precision": 0.8734793187347932,
+      "span_recall": 0.9324675324675324,
+      "span_micro_f1": 0.9020100502512562,
+      "joint_state_accuracy": 0.37023809523809526,
+      "joint_state_dialogue_bootstrap_95": [
+        0.30476190476190473,
+        0.4363392857142857
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 1.0,
+        "stop_medication": 1.0,
+        "correct_dose": 1.0,
+        "unknown_dose": 1.0,
+        "report_symptom": 1.0,
+        "deny_symptom": 1.0,
+        "confirm": 1.0
+      },
+      "errors": [
+        {
+          "text": "my medication is zelorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use zelorin 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "zelorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is medorin 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "medorin",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is norava 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "norava",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is nova forte 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use nova forte 10 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "drug": "forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use luma plus 20 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "luma plus",
+            "dose": "20",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i no longer take luma plus",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "luma plus"
+          },
+          "predicted_slots": {
+            "drug": "plus"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i use calmexa 40 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "my medication is calmexa 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        }
+      ]
+    }
+  ]
+}
