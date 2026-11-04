@@ -1,0 +1,1558 @@
+{
+  "synthetic_only": true,
+  "n_dialogues": 600,
+  "epochs": 25,
+  "data_sha256": "6683bfbd6167ccac6f78807eb54d636f4766ed07fb6093f87f83b3fd898a3b7f",
+  "python": "3.12.9",
+  "torch": "2.9.0",
+  "device": "cpu",
+  "rule_baseline": {
+    "n_dialogues": 120,
+    "n_turns": 840,
+    "intent_accuracy": 1.0,
+    "semantic_exact_match": 1.0,
+    "span_precision": 1.0,
+    "span_recall": 1.0,
+    "span_micro_f1": 1.0,
+    "joint_state_accuracy": 1.0,
+    "joint_state_dialogue_bootstrap_95": [
+      1.0,
+      1.0
+    ],
+    "per_intent_accuracy": {
+      "add_medication": 1.0,
+      "stop_medication": 1.0,
+      "correct_dose": 1.0,
+      "unknown_dose": 1.0,
+      "report_symptom": 1.0,
+      "deny_symptom": 1.0,
+      "confirm": 1.0
+    },
+    "errors": []
+  },
+  "runs": [
+    {
+      "seed": 7,
+      "best_validation_loss": 1.8559422492980957,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.835326632242354,
+          "validation_loss": 1.8559422492980957
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.09231190813912285,
+          "validation_loss": 2.3655436038970947
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.017898845193641526,
+          "validation_loss": 2.501664638519287
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.009379555962033688,
+          "validation_loss": 2.6053683757781982
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.006168828381314164,
+          "validation_loss": 2.680196762084961
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.004452899157527893,
+          "validation_loss": 2.743192672729492
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.003396982631631314,
+          "validation_loss": 2.792470932006836
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.0026979573026654265,
+          "validation_loss": 2.8329885005950928
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.0022087270349618934,
+          "validation_loss": 2.871384620666504
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.0018481251890845006,
+          "validation_loss": 2.8987877368927
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.0015727178866250648,
+          "validation_loss": 2.9288463592529297
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.001360321220468789,
+          "validation_loss": 2.951089859008789
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.0011905001424666907,
+          "validation_loss": 2.977264165878296
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.0010523383867823415,
+          "validation_loss": 2.9958720207214355
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.0009389334958830168,
+          "validation_loss": 3.0133562088012695
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.000844019913439831,
+          "validation_loss": 3.0323312282562256
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.0007640447009295698,
+          "validation_loss": 3.0496325492858887
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.000695445639125648,
+          "validation_loss": 3.0648930072784424
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.0006365688774542557,
+          "validation_loss": 3.0801644325256348
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.000585442475072803,
+          "validation_loss": 3.090513229370117
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.0005405191989940783,
+          "validation_loss": 3.1016626358032227
+        },
+        {
+          "epoch": 22,
+          "train_loss": 0.0005011339054723817,
+          "validation_loss": 3.115675449371338
+        },
+        {
+          "epoch": 23,
+          "train_loss": 0.00046633717138320205,
+          "validation_loss": 3.1259942054748535
+        },
+        {
+          "epoch": 24,
+          "train_loss": 0.0004350569376367189,
+          "validation_loss": 3.1354756355285645
+        },
+        {
+          "epoch": 25,
+          "train_loss": 0.000406814361035469,
+          "validation_loss": 3.1446423530578613
+        }
+      ],
+      "seconds": 6.214983459096402,
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 0.4392857142857143,
+      "semantic_exact_match": 0.2714285714285714,
+      "span_precision": 0.4328267477203647,
+      "span_recall": 0.8476190476190476,
+      "span_micro_f1": 0.5730382293762576,
+      "joint_state_accuracy": 0.060714285714285714,
+      "joint_state_dialogue_bootstrap_95": [
+        0.04223214285714286,
+        0.07976190476190474
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 1.0,
+        "stop_medication": 1.0,
+        "correct_dose": 0.0,
+        "unknown_dose": 0.48333333333333334,
+        "report_symptom": 0.5416666666666666,
+        "deny_symptom": 0.05,
+        "confirm": 0.0
+      },
+      "errors": [
+        {
+          "text": "put norava 40 mg daily on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "predicted_slots": {
+            "drug": "on",
+            "dose": "40",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "sorry it should read 40 mg",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "drug": "read",
+            "dose": "40"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "there has been no nausea",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "nausea"
+          },
+          "predicted_slots": {
+            "symptom": "nausea"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "sorry it should read 5 mg",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "5"
+          },
+          "predicted_slots": {
+            "drug": "read",
+            "dose": "5"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is sore throat",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "sore throat"
+          },
+          "predicted_slots": {
+            "symptom": "sore throat"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "it"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh nova forte is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um i am on nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 10 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "there has been no dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh calmexa is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "calmexa"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 40 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 10 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "10"
+          },
+          "predicted_slots": {
+            "dose": "10",
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {},
+          "predicted_slots": {
+            "drug": "it"
+          },
+          "action": "clarify"
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "best_validation_loss": 2.2467868328094482,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.788898801141315,
+          "validation_loss": 2.2467868328094482
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.08159125061735274,
+          "validation_loss": 2.3295607566833496
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.017126645044320158,
+          "validation_loss": 2.412806987762451
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.009076939666614173,
+          "validation_loss": 2.465261459350586
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0059730706219044,
+          "validation_loss": 2.5083565711975098
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.004311069727890075,
+          "validation_loss": 2.5405831336975098
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.0032976643374514956,
+          "validation_loss": 2.566526174545288
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.0026223770165372464,
+          "validation_loss": 2.586496114730835
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.0021487200348120597,
+          "validation_loss": 2.6088638305664062
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.0018017930599550406,
+          "validation_loss": 2.6302061080932617
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.0015370680351874657,
+          "validation_loss": 2.640294075012207
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.0013290154311569437,
+          "validation_loss": 2.6611828804016113
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.0011643416518049817,
+          "validation_loss": 2.674984931945801
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.0010311535925471356,
+          "validation_loss": 2.6844325065612793
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.0009209366947678583,
+          "validation_loss": 2.6989524364471436
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.0008283691295969581,
+          "validation_loss": 2.710277795791626
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.0007505248335840565,
+          "validation_loss": 2.7246227264404297
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.0006836819262909038,
+          "validation_loss": 2.732328176498413
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.0006258609037595018,
+          "validation_loss": 2.7419819831848145
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.0005757016440232595,
+          "validation_loss": 2.752415180206299
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.000531941697755385,
+          "validation_loss": 2.760328769683838
+        },
+        {
+          "epoch": 22,
+          "train_loss": 0.00049359773245034,
+          "validation_loss": 2.768425703048706
+        },
+        {
+          "epoch": 23,
+          "train_loss": 0.00045924555632241424,
+          "validation_loss": 2.7757484912872314
+        },
+        {
+          "epoch": 24,
+          "train_loss": 0.00042870919153626476,
+          "validation_loss": 2.784698009490967
+        },
+        {
+          "epoch": 25,
+          "train_loss": 0.0004009234996157743,
+          "validation_loss": 2.792443037033081
+        }
+      ],
+      "seconds": 5.95880312519148,
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 0.5869047619047619,
+      "semantic_exact_match": 0.3345238095238095,
+      "span_precision": 0.3969465648854962,
+      "span_recall": 0.8047619047619048,
+      "span_micro_f1": 0.5316555249705073,
+      "joint_state_accuracy": 0.047619047619047616,
+      "joint_state_dialogue_bootstrap_95": [
+        0.03095238095238095,
+        0.06547619047619048
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 0.9083333333333333,
+        "stop_medication": 0.6916666666666667,
+        "correct_dose": 0.525,
+        "unknown_dose": 0.48333333333333334,
+        "report_symptom": 0.5833333333333334,
+        "deny_symptom": 0.4,
+        "confirm": 0.5166666666666667
+      },
+      "errors": [
+        {
+          "text": "put norava 40 mg daily on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "correct_dose",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "confirm",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using norava",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "norava"
+          },
+          "predicted_slots": {
+            "symptom": "quit",
+            "drug": "norava"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is sore throat",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "sore throat"
+          },
+          "predicted_slots": {
+            "symptom": "sore throat"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "confirm",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using medorin",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "medorin"
+          },
+          "predicted_slots": {
+            "symptom": "quit using",
+            "drug": "medorin"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "uh nova forte is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um i am on nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "confirm",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "symptom": "quit",
+            "drug": "nova forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 10 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "dose": "10",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "confirm",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh calmexa is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "calmexa"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 40 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "frequency": "list"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 10 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "10"
+          },
+          "predicted_slots": {
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "uh i have not noticed dizziness",
+          "gold_intent": "deny_symptom",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "uh calmexa is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "calmexa"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        }
+      ]
+    },
+    {
+      "seed": 31,
+      "best_validation_loss": 2.3963699340820312,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.7690470869579011,
+          "validation_loss": 2.3963699340820312
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.07015483309588735,
+          "validation_loss": 2.7701146602630615
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.015105332614528755,
+          "validation_loss": 2.8210864067077637
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.008266145863112003,
+          "validation_loss": 2.8931193351745605
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.005548354418623069,
+          "validation_loss": 2.9407238960266113
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.004049924132783734,
+          "validation_loss": 2.9932992458343506
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.0031150141043499824,
+          "validation_loss": 3.03981351852417
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.0024866844896995833,
+          "validation_loss": 3.078040599822998
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.0020452238715416384,
+          "validation_loss": 3.117471218109131
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.0017179479101850164,
+          "validation_loss": 3.1514170169830322
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.0014673223944440012,
+          "validation_loss": 3.1830973625183105
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.0012742944645680605,
+          "validation_loss": 3.213824987411499
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.0011189412820847735,
+          "validation_loss": 3.2418577671051025
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.0009925399731386393,
+          "validation_loss": 3.266293525695801
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.0008873459897817127,
+          "validation_loss": 3.291764259338379
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.0007990769857156372,
+          "validation_loss": 3.315227746963501
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.0007241339740594701,
+          "validation_loss": 3.335355281829834
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.0006600710910759748,
+          "validation_loss": 3.3559489250183105
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.0006045914768788313,
+          "validation_loss": 3.377829074859619
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.0005565719727042412,
+          "validation_loss": 3.3960554599761963
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.000514370718941329,
+          "validation_loss": 3.4133965969085693
+        },
+        {
+          "epoch": 22,
+          "train_loss": 0.000477125957822575,
+          "validation_loss": 3.431252956390381
+        },
+        {
+          "epoch": 23,
+          "train_loss": 0.00044358309325096863,
+          "validation_loss": 3.4479308128356934
+        },
+        {
+          "epoch": 24,
+          "train_loss": 0.00041420467637686266,
+          "validation_loss": 3.4630050659179688
+        },
+        {
+          "epoch": 25,
+          "train_loss": 0.00038763972411360887,
+          "validation_loss": 3.478328227996826
+        }
+      ],
+      "seconds": 5.933675667271018,
+      "n_dialogues": 120,
+      "n_turns": 840,
+      "intent_accuracy": 0.625,
+      "semantic_exact_match": 0.36904761904761907,
+      "span_precision": 0.38696655132641294,
+      "span_recall": 0.7988095238095239,
+      "span_micro_f1": 0.5213675213675214,
+      "joint_state_accuracy": 0.041666666666666664,
+      "joint_state_dialogue_bootstrap_95": [
+        0.026190476190476188,
+        0.05657738095238092
+      ],
+      "per_intent_accuracy": {
+        "add_medication": 1.0,
+        "stop_medication": 1.0,
+        "correct_dose": 0.0,
+        "unknown_dose": 0.48333333333333334,
+        "report_symptom": 0.8916666666666667,
+        "deny_symptom": 1.0,
+        "confirm": 0.0
+      },
+      "errors": [
+        {
+          "text": "put norava 40 mg daily on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "norava",
+            "dose": "40",
+            "frequency": "daily"
+          },
+          "predicted_slots": {
+            "drug": "list",
+            "dose": "40",
+            "frequency": "daily",
+            "symptom": "on"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "sorry it should read 40 mg",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "symptom": "read",
+            "dose": "40"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using norava",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "norava"
+          },
+          "predicted_slots": {
+            "symptom": "using",
+            "drug": "norava"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am on medorin 10 mg daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "medorin",
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "predicted_slots": {
+            "dose": "10",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "sorry it should read 5 mg",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "5"
+          },
+          "predicted_slots": {
+            "dose": "5"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using medorin",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "medorin"
+          },
+          "predicted_slots": {
+            "symptom": "using",
+            "drug": "medorin"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "it"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh nova forte is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um i am on nova forte 5 mg twice daily",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "twice daily"
+          },
+          "predicted_slots": {
+            "drug": "nova forte",
+            "dose": "5",
+            "frequency": "daily"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i quit using nova forte",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "nova forte"
+          },
+          "predicted_slots": {
+            "symptom": "using",
+            "drug": "nova forte"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 10 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "10",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "dose": "10",
+            "symptom": "on",
+            "drug": "list"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "i meant 40 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "40"
+          },
+          "predicted_slots": {
+            "dose": "40",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "um the problem is dizziness",
+          "gold_intent": "report_symptom",
+          "predicted_intent": "unknown_dose",
+          "gold_slots": {
+            "symptom": "dizziness"
+          },
+          "predicted_slots": {
+            "symptom": "dizziness"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "um yes exactly",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "exactly"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh calmexa is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "calmexa"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "put calmexa 40 mg nightly on my list",
+          "gold_intent": "add_medication",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "drug": "calmexa",
+            "dose": "40",
+            "frequency": "nightly"
+          },
+          "predicted_slots": {
+            "drug": "list",
+            "dose": "40",
+            "symptom": "on"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 10 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "10"
+          },
+          "predicted_slots": {
+            "dose": "10",
+            "drug": "instead"
+          },
+          "action": "accepted"
+        },
+        {
+          "text": "um i am unsure how much i take",
+          "gold_intent": "unknown_dose",
+          "predicted_intent": "report_symptom",
+          "gold_slots": {},
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "you have it right",
+          "gold_intent": "confirm",
+          "predicted_intent": "deny_symptom",
+          "gold_slots": {},
+          "predicted_slots": {
+            "symptom": "it"
+          },
+          "action": "clarify"
+        },
+        {
+          "text": "uh calmexa is no longer a medication i take",
+          "gold_intent": "stop_medication",
+          "predicted_intent": "stop_medication",
+          "gold_slots": {
+            "drug": "calmexa"
+          },
+          "predicted_slots": {},
+          "action": "clarify"
+        },
+        {
+          "text": "i meant 5 mg instead",
+          "gold_intent": "correct_dose",
+          "predicted_intent": "add_medication",
+          "gold_slots": {
+            "dose": "5"
+          },
+          "predicted_slots": {
+            "dose": "5",
+            "frequency": "instead"
+          },
+          "action": "clarify"
+        }
+      ]
+    }
+  ]
+}
